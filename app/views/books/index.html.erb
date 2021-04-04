@@ -1,28 +1,14 @@
 <body>
-  <div class="title">
   <h1>Books</h1>
-  </div>
-  <div class="table">
-    <div class="table-item">
-      <p>Title</p>
-      <p>Body</p>
-      <p></p>
-    </div>
-    <div class="table-element">
-      <p>a</p>
-      <p>a</p>
-      <%= link_to 'Show','/books' %>
-      <%= link_to 'Edit','/books' %>
-      <%= link_to 'Destroy','/books' %>
-      <%= @books.each do |book| %>
-      <span><%= book.title %></span>
-      <span><%= book.body %></span>
-      <%= link_to 'Show','/books' %>
-      <%= link_to 'Edit','/books' %>
-      <%= link_to 'Destroy','/books' %>
-      <% end %>
-    </div>
-  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Body</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+  </table>
   <div class="post-form">
     <div class="post-form-title">
       <h3>New book</h3>
