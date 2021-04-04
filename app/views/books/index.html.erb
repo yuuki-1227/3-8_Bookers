@@ -1,0 +1,26 @@
+<body>
+  <div class="title">
+  <h1>Books</h1>
+  </div>
+  <div class="table">
+    <div class="table-item">
+      <p>Title</p>
+      <p>Body</p>
+      <p></p>
+    </div>
+    <div class="table-element">
+      <%= @books.each do |book| %>
+      <span><%= book.title %></span>
+      <span><%= book.body %></span>
+      <% end %>
+    </div>
+  </div>
+  <div class="post-form">
+    <div class="post-form-title">
+      <h4>New book</h4>
+    <div class="post-form-field">
+      
+    </div>
+    </div>
+  </div>
+</body>
