@@ -8,7 +8,17 @@
         <th colspan="3"></th>
       </tr>
     </thead>
+    <tbody>
+      <%= @books.each do |f| %>
+      <tr><%= f.title %></tr>
+      <tr><%= f.body %></tr>
+      <tr><%= link_to 'Show' %></tr>
+      <tr><%= link_to 'Edit' %></tr>
+      <tr><%= link_to 'Destory' %></tr>
+    </tbody>
   </table>
-      <h3>New book</h3>
+  <h3>New book</h3>
+  <div class="form">
 
+  </div>
 </body>
