@@ -1,3 +1,6 @@
+<p class= "notice">
+  <%= notice %>
+</p>
 <body>
   <div class="header">
   <h1>Books</h1>
@@ -15,7 +18,7 @@
           <td><%= book.body %></td>
           <td><a href ="/books/<%= book.id %>"> Show </a></td>
           <td><a href ="/books/<%= book.id %>/edit"> Edit </a><td>
-          <td><%= link_to 'Destory', '/books', method: :delete, "data-confirm" => "Are you sure?" %></td>
+          <td><%= link_to'Destroy', book_path(book),method: :delete %></td>
         <% end %>
         </tr>
     </tbody>
