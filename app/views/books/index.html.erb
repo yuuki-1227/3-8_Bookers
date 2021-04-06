@@ -18,22 +18,20 @@
           <td><%= book.body %></td>
           <td><a href ="/books/<%= book.id %>"> Show </a></td>
           <td><a href ="/books/<%= book.id %>/edit"> Edit </a><td>
-          <td><%= link_to'Destroy', book_path(book),method: :delete,"data-confirm" => "Are you sure?"%></td>
+          <td><%= link_to 'Destroy', book_path(book),method: :delete,"data-confirm" => "Are you sure?"%></td>
         </tr>
       <% end %>
     </tbody>
   </table>
   <h3>New book</h3>
   <div class="form">
-    <%= form_for @book do |f| %>
-      <% if @book.errors.any? %>
-        <h3><%= @book.errors.count %>errors prohibited this book from being saved:</h3>
-          <ul>
-            <%= @book.errors.full_messages.each do |message| %>
-              <li><%= message %></li>
-            <% end %>
-          </ul>
-      <% end %>
+    <% if @book.errors.any? %>
+      <h3><%= @book.errors.count %>errors prohibited this book from being saved:</h3>
+        <ul>
+          <%= @book.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
     <% end %>
 
     <%= form_with model:@book, local:true do |f| %>
