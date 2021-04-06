@@ -7,9 +7,11 @@ class BooksController < ApplicationController
   def show
     @book = Book.find(params[:id])
 
+
   end
 
   def new
+    @book = Book.new
 
   end
 
@@ -26,7 +28,12 @@ class BooksController < ApplicationController
   def update
     book =Book.find(params[:id])
     book.update(book_params)
-    redirect_to '/books'
+    redirect_to show
+  end
+
+  def destory
+    blog = Blog.find(params[:id])
+    blog.destroy
   end
 
 
