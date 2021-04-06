@@ -48,6 +48,12 @@ table {
     border-color: grey;
 }
 
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
 th {
   padding-bottom: 5px;
 }
@@ -56,4 +62,8 @@ td {
   padding-bottom: 7px;
   padding-right: 5px;
   padding-left: 5px;
+}
+
+.notice {
+  color: green;
 }
