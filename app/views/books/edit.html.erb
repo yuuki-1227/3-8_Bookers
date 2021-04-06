@@ -6,5 +6,5 @@
 <%= f.text_area :body %>
 <%= f.submit 'Update Book' %>
 <% end %>
-<%= link_to 'Show', '/books' %>
+<a href = "/books/<%= @book.id %>">Show</a>
 <%= link_to 'Back', '/books' %>
