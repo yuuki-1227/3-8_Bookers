@@ -1,8 +1,8 @@
 <p class="notice">
   <%= notice %>
 </p>
-<p>Title: <%= @book.title %></p>
-<p>Body: <%= @book.body %></p>
+<p><strong>Title</strong>: <%= @book.title %></p>
+<p><strong>Body</strong>: <%= @book.body %></p>
 
 <a href ="/books/<%= @book.id %>/edit">Edit</a>
 <%= link_to 'Back', '/books' %>
