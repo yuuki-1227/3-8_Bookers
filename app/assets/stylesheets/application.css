@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #6c6b6b;
+  color: #333;
 }
 
 body {
@@ -73,6 +73,7 @@ td {
   border: 2px solid red;
   padding: 7px;
   padding-bottom: 0;
+  margin-top: 10px;
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }
@@ -102,5 +103,24 @@ li {
 
 .new-book {
   margin-top: 10px;
-  padding: 10px;
+}
+
+.text_field {
+  margin-top: 10px;
+}
+
+.form h4 {
+  margin-top: 10px;
+}
+
+.action {
+  margin-top: 10px;
+}
+
+.link {
+  margin-top: 10px;
+}
+
+.text_field h4 {
+  margin-top: 10px;
 }
